@@ -43,12 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'rest_framework',
-    'rest_framework_simplejwt',
     'django.contrib.messages',
     'drf_yasg',
     'django.contrib.staticfiles',
     'movies',
+    'rest_framework',
+    'rest_framework_simplejwt',
+
 ]
 
 MIDDLEWARE = [
@@ -95,15 +96,17 @@ DATABASES = {
     }
 }
 
+
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
+        "LOCATION": "redis://127.0.0.1:6379/1",  # DB index 1
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     }
 }
+
 
 
 # Password validation
@@ -153,3 +156,4 @@ REST_FRAMEWORK = {
     )
 }
 # JWT settings
+
