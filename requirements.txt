@@ -6,3 +6,5 @@ django-redis>=5.4
 psycopg2-binary>=2.9
 gunicorn>=21.2
 python-dotenv>=1.0
+python-decouple
+django-cors-headers>=3.13s
