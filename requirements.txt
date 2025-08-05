@@ -11,3 +11,4 @@ requests
 psycopg
 dj-database-url
 django-environ
+whitenoise>=6.0
